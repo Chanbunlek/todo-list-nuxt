@@ -212,7 +212,7 @@
 
             <Dialog v-model="editForm.open">
                 <template #title>
-                    Edit {{ editForm.id }} todo
+                    Edit todo
                 </template>
 
                 <template #default>

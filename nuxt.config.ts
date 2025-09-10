@@ -4,6 +4,9 @@ export default defineNuxtConfig({
     devServer: {
     host: '0.0.0.0'
   },
+  app: {
+    baseURL: '/todo-list-nuxt/'
+  },
   vite: {
     server: {
       allowedHosts: [
