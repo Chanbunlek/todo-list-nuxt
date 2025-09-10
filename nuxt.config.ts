@@ -5,7 +5,7 @@ export default defineNuxtConfig({
     host: '0.0.0.0'
   },
   app: {
-    baseURL: '/todo-list-nuxt'
+    baseURL: '/todo-list-nuxt/'
   },
   vite: {
     server: {
