@@ -5,7 +5,8 @@ export default defineNuxtConfig({
     host: '0.0.0.0'
   },
   app: {
-    baseURL: '/todo-list-nuxt/'
+    baseURL: '/todo-list-nuxt/',
+    buildAssetsDir: 'assets'
   },
   vite: {
     server: {
@@ -27,9 +28,7 @@ export default defineNuxtConfig({
     '@vee-validate/nuxt'
   ],
   veeValidate: {
-    // disable or enable auto imports
     autoImports: true,
-    // Use different names for components
     componentNames: {
       Form: 'VeeForm',
       Field: 'VeeField',

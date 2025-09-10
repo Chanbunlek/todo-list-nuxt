@@ -349,7 +349,7 @@ let socket
 
 onMounted(async () => {
     await todoStore.getAllTodos()
-    socket = new WebSocket("ws://ec2-13-114-37-227.ap-northeast-1.compute.amazonaws.com:8000/api/web-socket/")
+    socket = new WebSocket("wss://todo-list-service.duckdns.org/api/web-socket/")
     socket.onmessage = async (event) => {
         if (event.data == 'change')
             await todoStore.getAllTodos()
