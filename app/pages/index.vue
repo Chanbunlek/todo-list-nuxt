@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-[1200px] p-[30px] mx-auto min-h-screen bg-gray-100 space-y-[30px]">
+    <div class="max-w-[1200px] px-[20px] py-[25px] mx-auto min-h-screen bg-gray-100">
         <div class="flex items-center justify-between">
             <div class="font-bold text-[30px] flex gap-x-[8px]">
                 <Icon name="mdi:clipboard-list-outline" class="text-secondary" />
@@ -20,11 +20,11 @@
             </div>
         </div>
 
-        <div class="flex justify-end">
+        <div class="flex justify-end py-[20px]">
             <div class="bg-secondary/20 rounded-[5px] flex items-center p-[2px]">
                 <input
                     type="text"
-                    class="rounded-[5px] px-[8px]"
+                    class="rounded-[5px] px-[8px] max-w-[150px]"
                     placeholder="Search"
                     v-model="search"
                 >
@@ -72,7 +72,7 @@
                             {{ idx + 1 }}
                             
                             <span
-                                v-if="todoChecker(todo?.id, todo.todo)"
+                                v-if="todoChecker(todo.id, todo.todo)"
                                 class="text-[14px] font-normal pl-[5px] text-yellow-600 pt-[5px] animate-bounce"
                             >
                                 (Duplicated!)
@@ -268,7 +268,7 @@
                     Delete todo
                 </template>
 
-                Do you want to delete {{ deleteForm.id }} todo?
+                Do you want to delete a todo?
 
                 <div class="flex gap-x-3 justify-end">
                     <Button
